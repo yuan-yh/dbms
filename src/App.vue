@@ -1,9 +1,18 @@
 <template>
-  <div>
+  <div class="box">
     <h1>Hi from App</h1>
   </div>
 </template>
 
 <script setup lang="ts"></script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.box {
+  width: 600 px;
+  height: 400px;
+  background: black;
+  h1 {
+    color: white;
+  }
+}
+</style>
