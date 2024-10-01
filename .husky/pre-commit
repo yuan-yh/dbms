@@ -1,2 +1,2 @@
-npm run fix
+npm run lint
 git add .
