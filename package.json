@@ -1,15 +1,18 @@
 {
-  "name": "dbms",
+  "name": "billing-web-app",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --open",
     "build": "vue-tsc --noEmit && vite build",
+    "build:stag": "vue-tsc --noEmit && vite build --mode test",
+    "build: prod": "vue-tsc --noEmit && vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore",
     "prepare": "husky"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
+    "@vue/eslint-config-prettier": "^9.0.0",
     "core-js": "^3.37.1",
     "roboto-fontface": "*",
     "vue": "^3.4.31",
@@ -21,6 +24,7 @@
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-typescript": "^13.0.0",
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-config-vuetify": "^1.0.0",
     "eslint-plugin-import": "^2.29.1",
